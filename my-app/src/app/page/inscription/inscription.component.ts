@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InscriptionComponent implements OnInit {
   title = 'my-app';
-
+  currentItem = 'Television';
   constructor() { }
 
   ngOnInit(): void {

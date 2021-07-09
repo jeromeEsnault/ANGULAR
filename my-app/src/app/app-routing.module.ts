@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './page/home/home.component';
-import { InscriptionComponent } from './page/inscription/inscription.component';
-
-import { RouterModule, Routes } from '@angular/router';
+import { ProductListComponent } from './page/product-list/product-list.component'
+//import { InscriptionComponent } from './page/inscription/inscription.component';
 import { PagenotfoundComponent } from './page/pagenotfound/pagenotfound.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'inscription', component: InscriptionComponent },
+  //{ path: 'inscription', component: InscriptionComponent },
+  { path: 'product', component: ProductListComponent },
   { path: '**', component: PagenotfoundComponent}
 
 ]
